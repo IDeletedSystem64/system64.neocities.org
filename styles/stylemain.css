@@ -55,6 +55,61 @@ input:active {
     background: #acacac;
     box-shadow: inset 0em 0em
 }
+
+a {
+    text-decoration: none;
+}
+.button {
+    display: inline-flex;
+
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.button.button1 {
+    border-radius: 0;
+    box-sizing: border-box;
+    min-height: 23px;
+    color: #000;
+    padding: 0 2px 2px 0;
+    border-top: 1px solid #CCCCCC;
+    border-right: 0.1px solid transparent;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    background-color: #979797;
+    width: 15%;
+}
+
+.button.button1 span {
+    -webkit-appearance: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+    background: #dad9d9;
+    font-size: 170%;
+    font-family: 'Share Tech Mono', monospace;
+    box-shadow: inset -0.05em -0.05em black;
+}
+
+.button.button1 span:hover,
+.button.button1:hover + .button.button1 span {
+    background-color: #ACACAC;
+    border-top: 1px solid transparent;
+    border-right: 0.1px solid #dad9d9;
+    border-bottom: 1px solid #dad9d9;
+    border-left: 1px solid transparent;
+box-shadow: inset -0.05em -0.05em transparent;}
+.button.button1:hover {
+    background-color: #ACACAC;
+{
+
 img.githubico {
     left: 49%;
     position: fixed;
@@ -74,6 +129,7 @@ img.githubico {
     }
     input {
         font-size: 7vw;
+	-webkit-text-size-adjust:100%
         min-width: 110%;
         max-width: 110%;
         /* I lack the understanding as to why I have to set a mix/max, but its also nearly midnight as I'm writing this and I should probably go to bed. */
